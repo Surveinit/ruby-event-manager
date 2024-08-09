@@ -17,7 +17,7 @@ require 'csv'
 require 'google/apis/civicinfo_v2'
 
 civic_info = Google::Apis::CivicinfoV2::CivicInfoService.new
-civic_info.key = File.read('secret.key').strip
+civic_info.key = File.read('lib/secret.key').strip
 
 puts "EventManager Initialized"
 
